@@ -76,27 +76,27 @@ do {
 		$firstName = 	(isset($contact['properties']['firstname']['value'])) 	? $contact['properties']['firstname']['value'] : "";
 		$lastName = 	(isset($contact['properties']['lastname']['value'])) 	? $contact['properties']['lastname']['value'] : "";
 		$jobtitle = 	(isset($contact['properties']['jobtitle']['value'])) 	? $contact['properties']['jobtitle']['value'] : "";
-		$company = 		(isset($contact['properties']['company']['value'])) 	? $contact['properties']['company']['value'] : "";
-		$phone = 		(isset($contact['properties']['phone']['value'])) 		? $contact['properties']['phone']['value'] : "";
+		$company = 	(isset($contact['properties']['company']['value'])) 	? $contact['properties']['company']['value'] : "";
+		$phone = 	(isset($contact['properties']['phone']['value'])) 	? $contact['properties']['phone']['value'] : "";
 		$mobilePhone = 	(isset($contact['properties']['mobilephone']['value'])) ? $contact['properties']['mobilephone']['value'] : "";
-		$email_2 = 		(isset($contact['properties']['email_2']['value'])) 	? $contact['properties']['email_2']['value'] : "";
-		$address = 		(isset($contact['properties']['address']['value'])) 	? $contact['properties']['address']['value'] : "";
-		$city = 		(isset($contact['properties']['city']['value'])) 		? $contact['properties']['city']['value'] : "";
+		$email_2 = 	(isset($contact['properties']['email_2']['value'])) 	? $contact['properties']['email_2']['value'] : "";
+		$address = 	(isset($contact['properties']['address']['value'])) 	? $contact['properties']['address']['value'] : "";
+		$city = 	(isset($contact['properties']['city']['value'])) 	? $contact['properties']['city']['value'] : "";
 	
 		
 		/* Create a contact sub-array from desired properties */
 		$singleContactArray = array(
 			// Standard contact fields to format
-			'vid' => 			$vid,
+			'vid' => 		$vid,
 			'firstName' => 		$firstName,
 			'lastName' => 		$lastName,
 			'jobTitle' => 		$jobtitle,
 			'company' => 		$company,
-			'phone' => 			$phone,
+			'phone' => 		$phone,
 			'mobilePhone' => 	$mobilePhone,
 			'email_2' => 		$email_2,
 			'address' => 		$address, 
-			'city' => 			$city
+			'city' => 		$city
 		);
 
 		/* Add the single contact array to $allContactsArray */
@@ -118,9 +118,9 @@ foreach($allContactsArray as $contact){
 	$lastNameFormatted = 	trim( preg_replace("/[[:blank:]]+/"," ", strtoupper($contact['lastName']) ) );
 	$jobTitleFormatted = 	trim( preg_replace("/[[:blank:]]+/"," ", strtoupper($contact['jobTitle']) ) );
 	$companyFormatted = 	trim( preg_replace("/[[:blank:]]+/"," ", strtoupper($contact['company']) ) );
-	$email2Formatted = 		trim( preg_replace("/[[:blank:]]+/"," ", strtoupper($contact['email_2']) ) );
+	$email2Formatted = 	trim( preg_replace("/[[:blank:]]+/"," ", strtoupper($contact['email_2']) ) );
 	$addressFormatted = 	trim( preg_replace("/[[:blank:]]+/"," ", strtoupper($contact['address']) ) );
-	$cityFormatted = 		trim( preg_replace("/[[:blank:]]+/"," ", strtoupper($contact['city']) ) );
+	$cityFormatted = 	trim( preg_replace("/[[:blank:]]+/"," ", strtoupper($contact['city']) ) );
 	
 
 	/* Formatting phone and mobilePhone numbers: 'xxx-xxx-xxxx' */
