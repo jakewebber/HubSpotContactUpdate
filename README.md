@@ -10,7 +10,7 @@ Updates and cleans a HubSpot contacts, displays an HTML page. The HTML contains 
 4. Trim excess whitespace between values (greater than a single space).
 
 
-# #HubSpot HTML responseStatus Codes: 
+## HubSpot HTML responseStatus Codes: 
 - **400**:   A property doesn't exist, or a property value is invalid.
 - **401**:   Unauthorized request. Check for expired access token or incorrect API key.
 - **500**:   Internal Server Error. Something with HubSpot is screwed up and there's probably nothing you can do :(
